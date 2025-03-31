@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { link } from "fs";
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 
 export function Portfolio() {
@@ -8,51 +10,63 @@ export function Portfolio() {
     {
       title: "ShoesByBecky",
       description:
-        "A full-featured e-commerce platform with payment processing and inventory management.",
+        "An e-commerce site showcasing and selling handmade shoes with payment processing and inventory management.",
       tech: ["Wordpress", "WooCommerce", "Paystack", "PHP"],
       image: "/projects/shoesbybecky.png",
+      link: "https://shoesbybecky.com",
     },
     {
       title: "Disciples of Christ Ministry",
       description:
-        "A collaborative task management application with real-time updates and team features.",
+        "A church website for viewing events, watching livestreams, accessing previous video and audio sermons, and giving to the church.",
       tech: ["Wordpress", "Paystack", "PHP"],
       image: "/projects/dcmng.jpg",
+      link: "https://dcmng.org",
     },
     {
       title: "Tracksend",
       description:
-        "A responsive portfolio website with animations and dark mode support.",
+        "A website showcasing the features of a SaaS product that provides automated messaging solutions for businesses using SMS, Rich Media SMS, and WhatsApp.",
       tech: ["Wordpress", "PHP", "React"],
       image: "/projects/tracksend.jpg",
+      link: "https://tracksend.co",
     },
     {
       title: "Medissah",
       description:
-        "An AI-powered application that generates custom content based on user prompts.",
+        "A hospital website for screening, booking appointments, and providing basic medical information.",
       tech: ["Wordpress"],
       image: "/projects/medissah.jpg",
+      link: "https://medissah.com",
     },
     {
-      title: "Kornerstone Church London ",
+      title: "Kornerstone Church London",
       description:
-        "An AI-powered application that generates custom content based on user prompts.",
+        "A church website for viewing events, watching livestreams, accessing previous video and audio sermons, and giving to the church.",
       tech: ["Wordpress", "Paystack"],
       image: "/projects/kornerstone.jpg",
+      link: "http://kstonechurch.org.uk",
     },
     {
       title: "Sharpen Your Axe",
       description:
-        "An AI-powered application that generates custom content based on user prompts.",
+        "A book launch website designed to allow users to preorder a book and access related information.",
       tech: ["Wordpress", "WooCommerce", "Paystack"],
       image: "/projects/sharpen-your-axe.jpg",
     },
     {
-      title: "Reis",
+      title: "Tracksend Waitlist",
       description:
-        "An AI-powered application that generates custom content based on user prompts.",
-      tech: ["Wordpress", "Membership Management", "PHP"],
-      image: "/projects/reis.jpg",
+        "A waitlist application for Tracksend, allowing users to sign up and receive updates.",
+      tech: ["React", "NodeJs", "MySQL"],
+      image: "/projects/tracksend-marketing.jpg",
+    },
+    {
+      title: "Tracksend Marketing",
+      description:
+        "A marketing website for Tracksend, showcasing features and benefits of the platform.",
+      tech: ["HTML", "CSS", "Javascript"],
+      image: "/projects/tracksend-marketing2.jpg",
     },
   ];
 
@@ -91,7 +105,21 @@ export function Portfolio() {
               </div>
 
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                <div className="flex items-center justify-between">
+                  <h3 className="text-xl font-semibold mb-2">
+                    {project.title}
+                  </h3>
+                  {project?.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-indigo-500"
+                    >
+                      <ExternalLink className="w-5 h-5" />
+                    </a>
+                  )}
+                </div>
                 <p className="text-zinc-400 mb-4">{project.description}</p>
 
                 <div className="flex flex-wrap gap-2">
