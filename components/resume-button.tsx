@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 export function ResumeButton() {
   return (
     <motion.a
-      href="/resume.pdf"
+      href="/resume/Emmanuel-Ebiwari.pdf"
       target="_blank"
       rel="noopener noreferrer"
       className="inline-flex items-center justify-center rounded-md border border-zinc-700 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-800 transition-colors"
@@ -17,6 +17,5 @@ export function ResumeButton() {
     >
       My Resume
     </motion.a>
-  )
+  );
 }
-

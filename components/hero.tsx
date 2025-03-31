@@ -125,7 +125,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-[70vh] flex flex-col justify-center py-12 relative"
+      className="min-h-[70vh] flex flex-col justify-center py-10 relative"
     >
       <motion.div
         className="max-w-2xl"
@@ -133,28 +133,26 @@ export function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-6xl md:text-8xl font-bold">
-          Hi, I&apos;m{" "}
+        <h1 className="text-5xl md:text-7xl font-bold">
+          Hi, I'm <br />
           <span className="relative">
             Emmanuel
-            <span className="absolute -right-6 top-0 text-indigo-500 text-6xl md:text-8xl">
+            <span className="absolute -right-6 top-0 text-indigo-500 text-5xl md:text-7xl">
               .
             </span>
           </span>
         </h1>
 
         <h2 className="text-3xl md:text-4xl mt-4 font-light">
-          I&apos;m a{" "}
+          I'm a{" "}
           <span className="text-indigo-500 font-normal">
             Full Stack Developer
           </span>
         </h2>
 
         <p className="max-w-2xl mt-6 text-zinc-400 text-lg">
-          I&apos;ve spent the last 5 years building and scaling software for
-          some pretty cool companies. I also teach people to paint online
-          (incase you&apos;ve got an empty canvas layin&apos; around 👋).
-          Let&apos;s connect!
+          Turning ideas into scalable software solutions—crafting better ways
+          for businesses to connect. Let's build something great!
         </p>
 
         <motion.a

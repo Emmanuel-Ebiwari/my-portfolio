@@ -4,38 +4,39 @@ import { motion } from "framer-motion";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-16">
+    <section id="contact" className="py-6 text-center">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
-        className="max-w-3xl mx-auto bg-zinc-900 rounded-xl p-12"
+        className="max-w-xl mx-auto bg-zinc-900 rounded-xl p-12"
       >
-        <h2 className="text-6xl font-bold mb-8 flex items-center">
+        <h2 className="text-5xl font-bold mb-8 text-center">
           Contact
           <span className="text-indigo-500 ml-2">.</span>
         </h2>
 
-        <p className="text-xl text-zinc-300 mb-4">
-          Shoot me an email if you want to connect! You can also find me on{" "}
+        <p className="text-l text-zinc-300 mb-4 px-4">
+          Feel free to reach out via email if you’d like to connect! You can
+          also find me on{" "}
           <a
-            href="#"
+            href="https://www.linkedin.com/in/emmanuel-ebiwari-9898051a9"
             className="text-indigo-400 hover:text-indigo-300 transition-colors"
           >
             Linkedin
           </a>{" "}
           or{" "}
           <a
-            href="#"
+            href="https://github.com/Emmanuel-Ebiwari"
             className="text-indigo-400 hover:text-indigo-300 transition-colors"
           >
-            Twitter
+            Github
           </a>{" "}
-          if that's more your speed.
+          whichever works best for you.
         </p>
 
-        <div className="mt-8 flex items-center text-2xl">
+        <div className="mt-8 flex items-center justify-center text-xl">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
