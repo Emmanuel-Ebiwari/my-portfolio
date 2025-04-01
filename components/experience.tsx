@@ -28,7 +28,7 @@ export function Experience() {
       ],
     },
     {
-      company: "Self Employed",
+      company: "Freelance",
       role: "Freelance Web Developer",
       period: "2021 - Present",
       location: "Nigeria, Lagos",

@@ -26,13 +26,13 @@ export function Contact() {
           >
             Linkedin
           </a>{" "}
-          or{" "}
+          {/* or{" "}
           <a
             href="https://github.com/Emmanuel-Ebiwari"
             className="text-indigo-400 hover:text-indigo-300 transition-colors"
           >
             Github
-          </a>{" "}
+          </a>{" "} */}
           whichever works best for you.
         </p>
 
