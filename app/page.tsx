@@ -17,7 +17,7 @@ export default function Home() {
       <header className="w-full bg-black border-b border-zinc-800 fixed top-0 left-0 right-0 z-30">
         <div className="flex justify-between items-center py-4 px-6">
           <div className="text-3xl font-bold">
-            <Avatar className="w-12 h-12 bg-slate-400">
+            <Avatar className="w-10 h-10 md:w-12 md:h-12 bg-slate-400">
               <AvatarImage
                 className="size-full"
                 src="/logo.png"
@@ -42,7 +42,7 @@ export default function Home() {
         <main className="flex-1 relative overflow-hidden ml-16 md:ml-20">
           <DotPattern />
           <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
-            <div className="py-12 space-y-32">
+            <div className="py-12 space-y-16 md:space-y-32">
               <Hero />
               <About />
               <Portfolio />

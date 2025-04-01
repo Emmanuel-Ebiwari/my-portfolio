@@ -12,7 +12,7 @@ export function ElevatorPitch() {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-6xl font-bold mb-12 flex items-center justify-end">
+        <h2 className="text-3xl md:text-6xl font-bold mb-12 flex items-center justify-end">
           <div className="h-px bg-zinc-800 flex-grow ml-8"></div>
           Elevator Pitch
           <span className="text-indigo-500 ml-2">.</span>
@@ -40,8 +40,10 @@ export function ElevatorPitch() {
 
           {/* Video Overlay Text */}
           <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-            <h3 className="text-xl font-semibold mb-2">My Elevator Pitch</h3>
-            <p className="text-zinc-300">
+            <h3 className="text-lg md:text-xl font-semibold mb-2">
+              My Elevator Pitch
+            </h3>
+            <p className="text-zinc-300 text-sm md:text-base">
               Click to play my 30-second introduction
             </p>
           </div>

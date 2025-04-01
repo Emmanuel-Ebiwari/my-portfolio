@@ -35,7 +35,7 @@ export function About() {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-6xl font-bold mb-12 flex items-center">
+        <h2 className="text-3xl md:text-6xl font-bold  mb-6 md:mb-12 flex items-center">
           About
           <span className="text-indigo-500 ml-2">.</span>
           <div className="h-px bg-zinc-800 flex-grow ml-8"></div>
@@ -45,8 +45,8 @@ export function About() {
           <div className="lg:col-span-2">
             <div className="flex mb-6">
               <div>
-                <p className="leading-relaxed text-zinc-300 text-lg mb-6">
-                  <span className="bg-indigo-500 text-white py-2 px-3 rounded font-bold mr-2 float-left text-2xl">
+                <p className="leading-relaxed text-zinc-300 text-md md:text-lg mb-6">
+                  <span className="bg-indigo-500 text-white py-2 px-3 rounded font-bold mr-2 float-left text-1xl md:text-2xl">
                     H
                   </span>
                   ey! I'm Emmanuel Ebiwari. I'm a Fullstack Developer with a
@@ -54,7 +54,7 @@ export function About() {
                   applications
                 </p>
 
-                <p className="text-lg text-zinc-300 mb-6">
+                <p className="text-md md:text-lg text-zinc-300 mb-6">
                   I currently work at Tracksend, where I help develop automated
                   messaging solutions for businesses using SMS, Rich Media SMS,
                   and WhatsApp.
@@ -66,14 +66,14 @@ export function About() {
                   even teach courses online if you're looking to learn!
                 </p> */}
 
-                <p className="text-lg text-zinc-300 mb-6">
+                <p className="text-md md:text-lg text-zinc-300 mb-6">
                   I'm always open to exciting opportunities whether it's
                   collaborating on something new or diving into fresh
                   challenges. Let's connect!{" "}
                   <span className="inline-block">🔗</span>
                 </p>
 
-                <div className="mt-8 flex items-center">
+                <div className="mt-2  md:mt-8 flex items-center">
                   <p className="text-indigo-400 flex items-center hover:text-indigo-300 transition-colors mt-4 space-x-4">
                     My links <span className="ml-2">→</span>
                   </p>
@@ -103,14 +103,16 @@ export function About() {
                   <rect width="20" height="14" x="2" y="7" rx="2" ry="2" />
                   <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
                 </svg>
-                <h3 className="text-xl font-semibold">Use at work</h3>
+                <h3 className="text-lg md:text-xl font-semibold">
+                  Use at work
+                </h3>
               </div>
 
               <div className="flex flex-wrap gap-2">
                 {workSkills.map((skill) => (
                   <motion.div
                     key={skill}
-                    className="bg-zinc-800 rounded-md px-3 py-2 text-xs"
+                    className="bg-zinc-800 rounded-md px-2 py-1 md:px-3 md:py-2 text-xs"
                     whileHover={{
                       scale: 1.05,
                       backgroundColor: "rgba(79, 70, 229, 0.2)",
@@ -141,14 +143,16 @@ export function About() {
                   <line x1="9" x2="9.01" y1="9" y2="9" />
                   <line x1="15" x2="15.01" y1="9" y2="9" />
                 </svg>
-                <h3 className="text-xl font-semibold">Use for fun</h3>
+                <h3 className="text-lg md:text-xl font-semibold">
+                  Use for fun
+                </h3>
               </div>
 
               <div className="flex flex-wrap gap-2">
                 {funSkills.map((skill) => (
                   <motion.div
                     key={skill}
-                    className="bg-zinc-800 rounded-md px-3 py-2 text-xs"
+                    className="bg-zinc-800 rounded-md px-2 py-1 md:px-3 md:py-2 text-xs"
                     whileHover={{
                       scale: 1.05,
                       backgroundColor: "rgba(79, 70, 229, 0.2)",

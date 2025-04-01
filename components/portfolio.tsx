@@ -78,7 +78,7 @@ export function Portfolio() {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-6xl font-bold mb-12 flex items-center justify-end">
+        <h2 className="text-3xl md:text-6xl font-bold mb-12 flex items-center justify-end">
           <div className="h-px bg-zinc-800 flex-grow mr-8"></div>
           Portfolio
           <span className="text-indigo-500 ml-2">.</span>
@@ -95,7 +95,7 @@ export function Portfolio() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="relative h-48">
+              <div className="relative h-40 md:h-48">
                 <Image
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
@@ -106,7 +106,7 @@ export function Portfolio() {
 
               <div className="p-6">
                 <div className="flex items-center justify-between">
-                  <h3 className="text-xl font-semibold mb-2">
+                  <h3 className="text-lg md:text-xl font-semibold mb-2">
                     {project.title}
                   </h3>
                   {project?.link && (
@@ -116,11 +116,13 @@ export function Portfolio() {
                       rel="noopener noreferrer"
                       className="hover:text-indigo-500"
                     >
-                      <ExternalLink className="w-5 h-5" />
+                      <ExternalLink className="w-4 h-4  md:w-5 md:h-5" />
                     </a>
                   )}
                 </div>
-                <p className="text-zinc-400 mb-4">{project.description}</p>
+                <p className="text-zinc-400 mb-4 text-sm md:text-base">
+                  {project.description}
+                </p>
 
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tech) => (

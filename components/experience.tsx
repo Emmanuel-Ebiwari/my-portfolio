@@ -64,13 +64,13 @@ export function Experience() {
         viewport={{ once: true }}
         className="max-w-4xl"
       >
-        <h2 className="text-6xl font-bold mb-12 flex items-center">
+        <h2 className="text-3xl md:text-6xl font-bold mb-12 flex items-center">
           Experience
           <span className="text-indigo-500 ml-2">.</span>
           <div className="h-px bg-zinc-800 flex-grow ml-8"></div>
         </h2>
 
-        <div className="space-y-16">
+        <div className="space-y-12 md:space-y-16">
           {experiences.map((exp, index) => (
             <motion.div
               key={index}
@@ -82,22 +82,32 @@ export function Experience() {
             >
               <div className="flex flex-col md:flex-row md:justify-between mb-2">
                 <div>
-                  <h3 className="text-2xl font-bold">{exp.company}</h3>
-                  <p className="text-indigo-400 mb-2">{exp.role}</p>
+                  <h3 className="text-1xl md:text-2xl font-bold">
+                    {exp.company}
+                  </h3>
+                  <p className="text-indigo-400 text-sm md:text-base mb-2">
+                    {exp.role}
+                  </p>
                 </div>
-                <div className="text-right mt-2 md:mt-0">
-                  <p className="text-zinc-300">{exp.period}</p>
-                  <p className="text-zinc-400">{exp.location}</p>
+                <div className="text-left md:text-right mt-2 md:mt-0">
+                  <p className="text-zinc-300 text-xs md:text-base">
+                    {exp.period}
+                  </p>
+                  <p className="text-zinc-400 text-xs md:text-base">
+                    {exp.location}
+                  </p>
                 </div>
               </div>
 
-              <p className="text-zinc-300 mb-6">{exp.description}</p>
+              <p className="text-zinc-300 mb-6 text-sm md:text-base">
+                {exp.description}
+              </p>
 
               <div className="flex flex-wrap gap-2">
                 {exp.technologies.map((tech) => (
                   <span
                     key={tech}
-                    className="bg-zinc-800 text-xs px-3 py-1 rounded"
+                    className="bg-zinc-800 text-xs px-2 py-1 md:px-3 md:py-1 rounded"
                   >
                     {tech}
                   </span>
