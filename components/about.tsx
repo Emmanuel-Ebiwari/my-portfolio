@@ -65,6 +65,11 @@ export function About() {
                   you'll find me scribbling some happy clouds with my son ☁️ I
                   even teach courses online if you're looking to learn!
                 </p> */}
+                <p className="text-lg text-zinc-300 mb-6">
+                  Outside of work, I enjoy drawing and singing 
+                  (though I haven't picked up an instrument yet). 
+                  I also love unwinding with movies and games it's how I recharge and stay inspired.
+                </p>
 
                 <p className="text-md md:text-lg text-zinc-300 mb-6">
                   I'm always open to exciting opportunities whether it's

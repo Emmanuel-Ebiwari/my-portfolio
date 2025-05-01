@@ -25,26 +25,22 @@ export function ElevatorPitch() {
           }}
         >
           {/* Video Placeholder */}
-          <div className="absolute inset-0 bg-gradient-to-br from-zinc-800 to-zinc-900 flex items-center justify-center">
-            <motion.div
-              className="w-20 h-20 rounded-full bg-indigo-600/80 flex items-center justify-center cursor-pointer"
-              whileHover={{
-                scale: 1.1,
-                backgroundColor: "rgba(99, 102, 241, 0.9)",
-              }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Play size={36} className="text-white ml-1" />
-            </motion.div>
-          </div>
+          <iframe
+            className="absolute inset-0 w-full h-full"
+            src="https://www.youtube.com/embed/yrwyZ8GHjMQ?autoplay=1&mute=0&loop=1&controls=1&playlist=yrwyZ8GHjMQ"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
 
           {/* Video Overlay Text */}
-          <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+          <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent pointer-events-none">
             <h3 className="text-lg md:text-xl font-semibold mb-2">
               My Elevator Pitch
             </h3>
             <p className="text-zinc-300 text-sm md:text-base">
-              Click to play my 30-second introduction
+              Click to play my 1-minute introduction
             </p>
           </div>
         </motion.div>
