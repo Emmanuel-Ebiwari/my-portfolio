@@ -27,7 +27,7 @@ export function ElevatorPitch() {
           {/* Video Placeholder */}
           <iframe
             className="absolute inset-0 w-full h-full"
-            src="https://www.youtube.com/embed/yrwyZ8GHjMQ?autoplay=1&mute=0&loop=1&controls=1&playlist=yrwyZ8GHjMQ"
+            src="https://www.youtube.com/embed/yrwyZ8GHjMQ?autoplay=0&mute=0&loop=1&controls=1&playlist=yrwyZ8GHjMQ"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
