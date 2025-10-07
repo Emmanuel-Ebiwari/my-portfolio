@@ -8,6 +8,14 @@ import Image from "next/image";
 export function Portfolio() {
   const projects = [
     {
+      title: "Biologix Laboratories",
+      description:
+        "A laboratory website providing information about medical tests, services, and laboratory operations.",
+      tech: ["Wordpress", "PHP"],
+      image: "/projects/biologix.png",
+      link: "https://lab.biologix.com.ng",
+    },
+    {
       title: "ShoesByBecky",
       description:
         "An e-commerce site showcasing and selling handmade shoes with payment processing and inventory management.",
